@@ -1,0 +1,114 @@
+$dark-background: true;
+@import "../bower_components/material-sass/lib/definitions";
+
+body {
+  margin: 0;
+
+  color: $text-color;
+  background-color: $blue-grey-900;
+
+  font-family: Roboto, Arial, sans-serif;
+}
+
+main {
+  padding: 0 150px;
+  background-color: $blue-grey-800;
+}
+
+h1 {
+  @include font-display-3;
+  text-align: center;
+}
+
+h2 {
+  @include font-display-1;
+}
+
+p {
+  @include font-title;
+}
+
+section {
+  padding: 48px 0;
+}
+
+.example {
+  width: 700px;
+  height: 350px;
+
+  color: $text-color;
+  background-color: $blue-grey-700;
+
+  &[layout-align$="stretch"] {
+    > div {
+      height: auto;
+    }
+  }
+
+  &[layout-align$="baseline"] {
+    > .two {
+      font-size: 500%;
+    }
+    > .three {
+      font-size: 100%;
+    }
+  }
+
+  & + .example {
+    margin-top: 48px;
+  }
+
+  > div {
+    @include font-display-1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    width: 200px;
+    height: 100px;
+
+    &.one {
+      background-color: $teal-700;
+    }
+
+    &.two {
+      background-color: $blue-700;
+    }
+
+    &.three {
+      background-color: $pink-700;
+    }
+
+    &.four {
+      background-color: $amber-700;
+    }
+
+    &.five {
+      background-color: $deep-orange-700;
+    }
+
+    &::after {
+      @include font-title;
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      white-space: nowrap;
+
+      transform: translateX(-50%);
+    }
+
+    &[flex]::after {
+      content: 'flex';
+    }
+
+    &[align-self]::after {
+      content: 'align-self="' attr(align-self) '"';
+    }
+    &[align-self="stretch"] {
+      height: auto;
+    }
+  }
+}

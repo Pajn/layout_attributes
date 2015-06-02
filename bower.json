@@ -1,0 +1,14 @@
+{
+  "name": "layout-attributes",
+  "version": "0.1.0",
+  "authors": [
+    "Rasmus Eneman <rasmus@eneman.eu>"
+  ],
+  "homepage": "https://github.com/Pajn/layout_attributes",
+  "description": "Layout attributes using flexbox",
+  "main": "dist/attributes.css",
+  "license": "Apache 2",
+  "devDependencies": {
+    "material-sass": "~0.1.0"
+  }
+}

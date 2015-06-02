@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  color: white;
+  background-color: #263238;
+  font-family: Roboto, Arial, sans-serif; }
+
+main {
+  padding: 0 150px;
+  background-color: #37474f; }
+
+h1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+  text-align: center; }
+
+h2 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 34px;
+  font-weight: 400; }
+
+p {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.05rem; }
+
+section {
+  padding: 48px 0; }
+
+.example {
+  width: 700px;
+  height: 350px;
+  color: white;
+  background-color: #455a64; }
+  .example[layout-align$="stretch"] > div {
+    height: auto; }
+  .example[layout-align$="baseline"] > .two {
+    font-size: 500%; }
+  .example[layout-align$="baseline"] > .three {
+    font-size: 100%; }
+  .example + .example {
+    margin-top: 48px; }
+  .example > div {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 34px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 100px; }
+    .example > div.one {
+      background-color: #00796b; }
+    .example > div.two {
+      background-color: #455ede; }
+    .example > div.three {
+      background-color: #c2185b; }
+    .example > div.four {
+      background-color: #ffa000; }
+    .example > div.five {
+      background-color: #e64a19; }
+    .example > div::after {
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.05rem;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      white-space: nowrap;
+      transform: translateX(-50%); }
+    .example > div[flex]::after {
+      content: 'flex'; }
+    .example > div[align-self]::after {
+      content: 'align-self="' attr(align-self) '"'; }
+    .example > div[align-self="stretch"] {
+      height: auto; }
+
+/*# sourceMappingURL=styles.css.map */

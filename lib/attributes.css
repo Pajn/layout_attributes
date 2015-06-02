@@ -1,0 +1,76 @@
+[layout] {
+  display: flex; }
+
+[layout="row"] {
+  flex-direction: row; }
+
+[layout="column"] {
+  flex-direction: column; }
+
+[layout-wrap] {
+  flex-wrap: wrap; }
+
+[layout-align^="start"] {
+  justify-content: flex-start; }
+
+[layout-align^="center"] {
+  justify-content: center; }
+
+[layout-align^="end"] {
+  justify-content: flex-end; }
+
+[layout-align^="even"] {
+  justify-content: space-around; }
+
+[layout-align^="spread"] {
+  justify-content: space-between; }
+
+[layout-align$="start"] {
+  align-items: flex-start; }
+
+[layout-align$="center"] {
+  align-items: center; }
+
+[layout-align$="end"] {
+  align-items: flex-end; }
+
+[layout-align$="stretch"] {
+  align-items: stretch; }
+
+[layout-align$="baseline"] {
+  align-items: baseline; }
+
+[layout-wrap="start"] {
+  align-content: flex-start; }
+
+[layout-wrap="center"] {
+  align-content: center; }
+
+[layout-wrap="end"] {
+  align-content: flex-end; }
+
+[layout-wrap="even"] {
+  align-content: space-around; }
+
+[layout-wrap="spread"] {
+  align-content: space-between; }
+
+[flex] {
+  flex: 1; }
+
+[align-self="start"] {
+  align-self: flex-start; }
+
+[align-self="center"] {
+  align-self: center; }
+
+[align-self="end"] {
+  align-self: flex-end; }
+
+[align-self="stretch"] {
+  align-self: stretch; }
+
+[align-self="baseline"] {
+  align-self: baseline; }
+
+/*# sourceMappingURL=attributes.css.map */
